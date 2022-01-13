@@ -1,0 +1,142 @@
+body {
+  font-family:arial,sans-serif;
+  padding:0,18px; /* ici le "0" concerne la droite et la gauche */
+
+}
+nav {
+  text-align:right;
+
+}
+.menu-item {
+  font-size:13px;
+  color: rbga (0,0,0,0.87);
+  text-decoration:none;
+  position:relative;
+  top:-8px;
+  margin-right:10px;
+
+}
+.menu-item:hover {
+  text-decoration:underline;
+
+}
+#dropdown-menu {
+  position:relative;
+  top:-2px;
+  margin-right:10px;
+}
+#photo-profil {
+  height:32px;
+  width:32px;
+  border-radius:20px;
+  margin-right:10px;
+
+}
+section {
+  text-align:center;
+  margin-top:13%;
+
+}
+#search-box {
+  width: 582px;
+  color: #222;
+  border: 1px solid #dfe1e5;
+  font-size: 13px;
+  padding: 14px;
+  border-radius: 24px;
+  outline:none; /* outline pour enlever le contour lorsqu"on clique sur la barre de recherche */
+  margin-top:20px;
+
+}
+#search-box:hover { /* hover lorsque l'on passe la souris dessus */
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+
+}
+#search-box:focus { /* focus lorsqu'on clique dessus */
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+
+}
+#input-wrapper {
+  position:relative;
+  width:582px;
+  display:inline-block;
+}
+#input-wrapper > img { /* afin de mettre l'image à l'intérieur de la barre de recherche */
+  position: absolute;
+  right:5px;
+  bottom:8px;
+  width:28px;
+
+}
+.custom-button {
+  background color #f2f2f2;
+  color: #5F6368;
+  font-size: 14px;
+  height: 36px;
+  padding: 0 16px;
+  background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  color: #222;
+  margin-top:20px;
+
+}
+.custom-button:hover {
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+  outline:none;
+
+}
+.custom-button:first-of-type { /* first of type pour mettre la même marge par exemple à deux ou plusieurs même élements */
+  margin:15px;
+
+}
+#dropdown-wrapper {
+  display:inline-block;
+
+}
+#app-dropdown {
+  width: 285px;
+  padding: 28px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom:15px;
+  position:absolute;
+  left:950px;
+  display:none; /* display none permet de cacher l'élement*/
+
+}
+ #dropdown-wrapper:hover #app-dropdown { /* il faut donc mettre un " hover" entre les deux "id" afin que le menu des item apparaissent lorsqu'on passe dessus*/
+  display:block;
+
+}
+
+.dropdown-item {
+  display: inline-block;
+  width: 84px;
+  padding:8px, 2px;
+  margin-bottom:7px;
+  margin-right:5px;
+  text-align:center;
+
+}
+.dropdown-item:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius:10px;
+
+}
+.dropdown-item > img {
+  width:50px;
+  height:50px;
+
+}
+.dropdown-item > p {
+  color: rgba(0, 0, 0, 0.87);
+  margin:0;
+  padding:10px;
+
+}
